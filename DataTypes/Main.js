@@ -89,51 +89,169 @@
 
 
 
- var fullText1 ="MAN67584758;Manchester Picadilly"
- var text1Divider = fullText1.indexOf(';')
- var computerText = fullText1.slice(0, text1Divider);
- var humanText = fullText1.slice(text1Divider + 1, fullText1.length);
+//  var fullText1 ="MAN67584758;Manchester Picadilly"
+//  var text1Divider = fullText1.indexOf(';')
+//  var computerText = fullText1.slice(0, text1Divider);
+//  var humanText = fullText1.slice(text1Divider + 1, fullText1.length);
 
- console.log('Computer: ' + computerText + ', Human:' + humanText)
+//  console.log('Computer: ' + computerText + ', Human:' + humanText)
 
-var fullText2 ="GNF5767465;Greenfield"
+// var fullText2 ="GNF5767465;Greenfield"
 
-var text2Divider = fullText2.indexOf(';')
-var computerText = fullText2.slice(0, text2Divider);
-var humanText = fullText2.slice(text2Divider + 1, fullText2.length);
+// var text2Divider = fullText2.indexOf(';')
+// var computerText = fullText2.slice(0, text2Divider);
+// var humanText = fullText2.slice(text2Divider + 1, fullText2.length);
 
-console.log('Computer: ' + computerText + ', Human:' + humanText)
+// console.log('Computer: ' + computerText + ', Human:' + humanText)
 
-var fullText3 ="LIV5hg65hd7374;Liverpool Lime Street"
+// var fullText3 ="LIV5hg65hd7374;Liverpool Lime Street"
 
-var txt3Divider = fullText3.indexOf(';')
-var computerText = fullText3.slice(0, txt3Divider);
-var humanText = fullText3.slice(txt3Divider + 1, fullText3.length);
+// var txt3Divider = fullText3.indexOf(';')
+// var computerText = fullText3.slice(0, txt3Divider);
+// var humanText = fullText3.slice(txt3Divider + 1, fullText3.length);
 
-console.log('Computer: ' + computerText + ', Human:' + humanText);
+// console.log('Computer: ' + computerText + ', Human:' + humanText);
 
-var fullText4 = "SYBf;Syalybridge"
+// var fullText4 = "SYBf;Syalybridge"
 
-var txt4Divider = fullText4.indexOf(';')
-var computerText = fullText4.slice(0, txt4Divider);
-var humanText = fullText4.slice(txt4Divider + 1, fullText4.length);
+// var txt4Divider = fullText4.indexOf(';')
+// var computerText = fullText4.slice(0, txt4Divider);
+// var humanText = fullText4.slice(txt4Divider + 1, fullText4.length);
 
-console.log('Computer: ' + computerText + ', Human:' + humanText);
+// console.log('Computer: ' + computerText + ', Human:' + humanText);
 
-var fullText5 = "HUD5767ghtyfyr45;Huddersfield"
+// var fullText5 = "HUD5767ghtyfyr45;Huddersfield"
 
-var txt5Divider = fullText5.indexOf(';')
-var computerText = fullText5.slice(0, txt5Divider);
-var humanText = fullText5.slice(txt5Divider + 1, fullText5.length)
+// var txt5Divider = fullText5.indexOf(';')
+// var computerText = fullText5.slice(0, txt5Divider);
+// var humanText = fullText5.slice(txt5Divider + 1, fullText5.length)
 
-console.log('Computer: ' + computerText + ', Human:' + humanText);
-
-
+// console.log('Computer: ' + computerText + ', Human:' + humanText);
 
 
 
 
 
+// function countSheeps(arrayOfSheep) {
+//      var num = 0;
+//     for (var i = 0; i < arrayOfSheep.length;i++){
+//         var current = arrayOfSheep[i];
+//         if (current === true){
+//             num += 1;
+//         }
+
+//
+//     }
+    
+//      return num;  
+
+// //}
+
+// //var array1 = [true,  true,  true,  false,true,  true,  true,  true , true,  false, true,  false, true,  false, false, true , true,  true,  true,  true , false, false, true,  true ];
+// //var array2 = [true,  true,  true,  false,true,  true,  true,  true , true,  false, true,  false, true,  false, false, true , true,  true,  true,  true , false, false, false, false];
+
+// //console.log(countSheeps(array1))
+// //console.log(countSheeps(array2))
 
 
 
+
+
+// // function findSmallestInt(args) {
+// //     return args.sort()[0];
+// //    }
+// //    console.log(findSmallestInt([9, 4, 6]));
+
+
+// // function findSmallestInt(args) {
+//     // var smallestNumber = args[0];
+//     // // loop/iterate through each value inside the args array
+     
+//     // for (var i = 0; i < args.length; i++) {
+//     // // 78 78 --> nothing 56 < 78 --> true so smallestNum is assigned the new value
+//     // if (args[i] < smallestNumber) {
+//     // smallestNumber = args[i];
+//     // }
+//     // }
+//     // return smallestNumber;
+//     // }
+    // str = ('8 j 8   mBliB8g  imjB8B8  jl  B'),
+
+    // function noSpace(x){
+        
+    //     var str;
+    //    str = str.trim();
+
+    // }     
+       
+    
+
+    // Math function
+        
+      
+    // function basicOp(o, v1, v2)
+    // {
+    //  if (o === '+') return v1 + v2;
+    //  if (o === '-') return v1 - v2;
+    //  if (o === '/') return v1 / v2;
+    //  if (o === '*') return v1 * v2;
+    // }
+
+
+
+
+    //Q1:
+
+    // Only using comments write a function that gets the first item in an array
+    // 
+    //  Q1 solution.
+
+    //  Declare a function that will have an array of a few items.
+    //  Using the index method , we going to count from 0 => zero to reach the
+    //  the first item inside the array.
+    //  And the first item in the array will be item index 0 since the indices of an 
+    //  item start from 0 to the end of the length of the array.
+
+
+    //Q2:
+
+    // Given a string remove every other letter
+    //
+    // Q2 solution.
+
+    // create a string of letters.
+    // we will try to remove every other letter by counting and splitting 
+    // on the index of every other letter until the last.
+
+
+
+
+
+
+
+    
+    //Q3:
+
+    // Given a number minus 5 from it and divide it by 10
+
+    // Q3 solution.
+
+    // we can choose any random number.
+    // and will do math operation to substract 5 from it and
+    // after that divided it by 10.
+    // that will give me 2 operations with 2 differents resuls,
+    // but from the same number.
+    S
+
+     // microbit home work
+
+//     led.setBrightness(222)
+// for (let index = 0; index <= input.lightLevel(); index++) {
+//     basic.showNumber(0)
+//     if (true) {
+//         for (let index2 = 0; index2 < 20; index2++) {
+//             basic.pause(500)
+//         }
+//         basic.showIcon(IconNames.Heart)
+//     }
+// }
