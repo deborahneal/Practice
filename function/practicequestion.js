@@ -88,11 +88,12 @@
  
 // Q1.5
 // Create a function that takes in an array and combines the elements into a string
- //const Fur = ['couch','coffee table','rug','console table'];
-//function combElements(arr){
-   // return arrFur(arrFur.join(', '));
-//}
-//console.log(arrFur.join(', '));
+// let arr = ['couch','coffee table','rug','console table'];
+// function combElements(arr){
+//     let allLetters = arr.join('');
+//     return allLetters;
+// }
+// console.log(combElements(arr));
 
 
 
@@ -101,32 +102,33 @@
 // Q2.1
 // Create a function that takes in a string and returns the last character
 // let str = 'benefit';
-// function happy(string){
+// function happy(str){
 //     return str.slice(-1);
 // }
-// //console.log(str.slice(-1));
+// console.log(happy(str));
 
 
 
 // Q2.2
 // Create a function that takes in an array and returns the last element
-// let num = ['1', '2', '5'];
-// array =  ['1', '2', '5'];
-// function lastN(array){
-//     return array[2];
+//let arr = ['1', '2', '5'];
+
+// function lastN(arr){
+//     let element = arr.slice(-1)
+//     return element;
 // }
-// //console.log(array[2]);
+// console.log(lastN(arr));
 
  
 // level 3:
 // Q3.1
 // Create a function that takes in a string and returns the central character
-// let str = "good job";
-// str = "good job";
-// function central(string){
-//     return;
+//  let string = "good-job";
+//  function central(string){
+//     let midChart = string.length;
+//     return ([], string.length/2);
 // }
-// console.log(Mstring());
+// console.log(central(string));
 
 
 
@@ -136,28 +138,28 @@
  
 // level 4:
 // Create a function that searches for all numbers inside strings in a given array and removes them 
-// input = ['B12', 'RTX3000', 'Hello World', 'H3110 W041D']
+//let arr = ['B12', 'RTX3000', 'Hello World', 'H3110 W041D']
 // output = ['B', 'RTX', 'Hello World', 'HWD']
 
 
 
-function removeNums(arr) {
-    let str = arr.join("-");
+// function removeNums(arr) {
+//     let str = arr.join("-");
     
-    let newString = "";
-    for (let i = 0; i < str.length; i++) {
-    if (str[i] * 1 || str[i] === "0") {
-    null;
-    } else {
-    newString = newString + str[i];
-    }
-    }
-    let newArr = newString.split("-");
-    // let newValue = newArr[newArr.length - 1].replace(" ", "");
-    // newArr.splice(newArr.length - 1, 1, newValue);
-    return newArr;
-   }
-   console.log(removeNums(['B12', 'RTX3000', 'Hello World', 'H3110 W041D']));
+//     let newString = "";
+//     for (let i = 0; i < str.length; i++) {
+//     if (str[i] * 1 || str[i] === "0") {
+//     null;
+//     } else {
+//     newString = newString + str[i];
+//     }
+//     }
+//     let newArr = newString.split("-");
+//     // let newValue = newArr[newArr.length - 1].replace(" ", "");
+//     // newArr.splice(newArr.length - 1, 1, newValue);
+//     return newArr;
+//    }
+//    console.log(removeNums(arr));
 
 
 
