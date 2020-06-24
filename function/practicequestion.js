@@ -165,4 +165,39 @@
 
 
 
-   
+
+
+
+              // Question //
+
+// Inline, Internal, External, which one is the best to use?
+//  Can you explain more the 'id' concept.
+// how to use URL with no big deal?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

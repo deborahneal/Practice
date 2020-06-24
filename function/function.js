@@ -392,25 +392,25 @@
 
 // level 0
     // create and invoke a "hello world" function that will always say hello world
-function greeting(){
-   return 'Hello World'
-}
-console.log('Hello World');
+// function greeting(){
+//    return 'Hello World'
+// }
+// console.log('Hello World');
 
 
-// level 1 
+// // level 1 
     // Q1:
         // create and invoke a function that takes in a name and produces hello + givenName + !
             // input: 'Nic'
             // output: Hello Nic!
-  var name = ('Nic');
-function UserGreeting(strNameparam){
-   name = 'Welcome ' + name;
-   return name;
+//   var name = ('Nic');
+// function UserGreeting(strNameparam){
+//    name = 'Welcome ' + name;
+//    return name;
    
    
-}  
-console.log(UserGreeting ());
+// }  
+// console.log(UserGreeting ());
 
 
 
@@ -419,22 +419,22 @@ console.log(UserGreeting ());
     // Q2: 
         // create a function that takes in one number and doubles it
 
-function CheckNum(op, a, b){
-   if (op === 'a', '+', 'b'){
-      return true;
-   }
-}
-console.log(CheckNum('op', 8, '+', 8));
+// function CheckNum(op, a, b){
+//    if (op === 'a', '+', 'b'){
+//       return true;
+//    }
+// }
+// console.log(CheckNum('op', 8, '+', 8));
 
 
-    // Q3:
-        // create a function that takes in a number and triples it
-const str1 = 5;
-const str2 = 3;
-function triplesN(string){
-    return str1 * str2;
-}
-console.log(str1 * str2);
+//     // Q3:
+//         // create a function that takes in a number and triples it
+// const str1 = 5;
+// const str2 = 3;
+// function triplesN(string){
+//     return str1 * str2;
+// }
+// console.log(str1 * str2);
 
 // level 2
     // Q1: 
@@ -455,3 +455,266 @@ console.log(str1 * str2);
     // Q1: 
         // create a function that returns an array of all the smaller positive numbers that are divisible by either 2 or 3 
             // requires an if statement
+
+// sorted arr exersise.
+
+            // function sorted(arr) {
+ 
+            //     let newArray = arr;
+                
+            //     for(let j = 0; j < arr.length; j++){
+            //     for (let i = 0; i < newArray.length; i++) {
+            //     let currentNum = newArray[i];
+            //     if(currentNum > newArray[i + 1]){
+            //     newArray.splice(i, 1); 
+            //     newArray.splice(i + 1, 0, currentNum); 
+            //     }
+            //     }
+            //     } 
+            //     return newArray;
+            //    }
+                
+            //    console.log(sorted([0, 5, 1, 3, 2, 9, 7, 6, 4]));
+
+
+
+            //    function missing(arr) {
+            //     let newArray = [];
+            //     let arrLength = arr.length
+            //     for (let i = 0; i < arr.length*arrLength; i++) {
+            //     let smallNum = Math.min(...arr);
+            //     newArray.push(...arr.splice(arr.indexOf(smallNum), 1));
+            //     }
+            //     return newArray;
+            //    }
+              // console.log(missing([0, 5, 1, 3, 2, 9, 7, 6, 4]));
+
+
+              //Higher order functions:
+    // Definition:
+    // A higher order function is a function that takes a function as an argument, or returns a function. 
+
+// Filter 
+    // returns a new array based on if each value is true or false
+        // Syntax:
+            // Simple: 
+            //     arr.filter(element => element.length !== 4);
+            // // Single line WITH return
+            //     arr.filter(element => { return element.length !== 4});
+            // // Multiple line
+            //     arr.filter(element => { 
+            //         return element.length !== 4
+            //     });
+
+
+        // example: remove all words that are 4 characters from an array or words
+
+        // let words = ['thing', 'item', 'person', 'sun', 'gasp'];
+
+        // let newArr = words.filter(word =>  word.length !== 4);
+
+        // console.log(newArr);
+
+        // let newArr = words.filter(word => {
+        //     return word.length !== 4
+        // });
+
+        // console.log(newArr);
+
+        // console.log(words);
+
+        // examples:
+            // given an array filter it to return all words that are 4 characters
+// let arr = ['tree', 'yes', 'present', 'tired', 'none'];           
+// let only4Letters = arr.filter( ele => ele.length === 4);
+// console.log(only4Letters);
+
+
+            // given an array filter it to return only the objects or arrays
+// let arr = ['may', 'july', true, false, undefined, null, [1, 2, 3, 4], {name: 'car', wheels: '4'}];
+// let newArr = arr.filter( element => {
+//     return typeof element === 'object'
+// });
+// console.log(newArr);
+
+
+            // given an array filter it to return words that only contain the letter a or e            
+        
+// let arr = ['tree', 'yes', 'sing', 'tired', 'cool', 'car'];           
+// let newArr = arr.filter( ele =>
+//     ele.indexOf('a') > -1||
+//     ele.indexOf('e') > -1);
+// //let newArr = arr.filter(ele => ele.indexOf('e') > -1);
+// console.log(newArr);
+            
+// Reduce
+
+// Map
+
+// Sort
+
+// examples:
+            // // given an array filter it to return all words that are 4 characters
+            //     let arr = ['tree', 'no', 'past', 'hungry'];
+            //     let only4Letters = arr.filter( ele => ele.length === 4);
+            //     // console.log(only4Letters);
+            // // given an array filter it to return only the objects or arrays
+            //     let arr1 = [true, false, undefined, null, [1, 2, 3, 4], {name: 'car', wheels:'4'}];
+            //     let newArr = arr1.filter(ele => typeof ele === 'object');
+            //     // console.log(newArr);
+            // // given an array filter it to return words that only contain one of the following letters a, e, i, o, or u
+            //     let arr2 = ['hey', 'how', 'are', 'you', 'a', 'by', 1, undefined, null, true]; 
+            //     let newArr2 = arr2.filter(ele => 
+            //         (typeof ele !== 'number' &&
+            //         typeof ele !== 'object' && 
+            //         typeof ele !== 'undefined' &&
+            //         typeof ele !== 'boolean')
+            //         && (ele.indexOf('a') > -1 ||
+            //         ele.indexOf('e') > -1 ||
+            //         ele.indexOf('i') > -1 ||
+            //         ele.indexOf('o') > -1 ||
+            //         ele.indexOf('u') > -1)
+            //     );
+
+                // console.log(newArr2);
+
+            // Given the array on the following line. Filter all guests for only the ones over 21. 
+        //     let guests = [
+        //         {name: 'Vernon', age: 40},
+        //         {name: 'Petunia', age: 44},
+        //         {name: 'Harry', age: 11},
+        //         {name: 'Dudley', age: 12}
+        //     ]
+        //     let newGuests = guests.filter(ele => { 
+            
+        //         return ele.age >= 21;
+        //     });
+        //    console.log(newGuests);
+    
+
+        
+
+// Reduce
+
+// Map
+
+// Sort
+
+// let newGuests = guests.filter(ele => { 
+            
+//     return ele.age >= 21;
+// });
+// console.log(newGuests);
+
+// Reduce
+    // returns a single value
+    // for example you can:
+        // reduce an array of numbers to one number (the total)
+        // reduce multiple arrays into one array
+        // reduce multiple strings into one string
+
+    // examples:
+        // given an array of numbers reduce it to the total (COMMON)
+        //let nums = [2,3,4,5];
+        //let totalVal = nums.reduce((total, num) => total + num);
+        // console.log(totalVal);
+    // reduce multiple arrays into one array ("flatten them") (VERY COMMON)
+        //let arrs = [['thing1', 'thing2', 'thing3'],[1,2,3],[true, false, true]];
+        //let oneArr = arrs.reduce((newArr, arr) => newArr.concat(arr));
+        // console.log(oneArr);
+    // reduce multiple strings into one string (NOT COMMON PEOPLE USE JOIN INSTEAD)
+        //let strings = ['Hello', 'this', 'should', 'be', 'a', 'sentence', '.']
+        //let sentence = strings.reduce((newString, currentString) => newString + ' ' + currentString);
+        //console.log(sentence);
+    // reduce an object to a single array (NOT COMMON & VERY COMPLEX)
+
+
+// practice
+    // Given an array of arrays reduce it to one array.
+    // let arrs = [1, 2,[true, undefined], 30, 5, ['may', 'june', 15]];
+    // let flatarr = arrs.reduce((newArr, arrs) => newArr.concat(arrs));
+    // console.log(oneArr); 
+
+
+    // Given an array of numbers reduce it to a total plus an additional 50.
+    // let nums = [1, 2, 30, 5];
+    // let totalVal = nums.reduce((total, num) => total + num, 50);
+    // console.log(totalVal); 
+
+
+
+
+    // Given the following list of objects reduce all populations to one.
+        let countries = {
+            USA: 300000000,
+            UK: 66000000,
+            India:1300000000
+        }
+
+    let newCountries = countries.reduce((total, ele) => total + ele.newCountries, 0);
+
+    // let nums = [1, 2, 30, 5];
+    // let totalVal = nums.reduce((total, num) => total + num);
+    // console.log(totalVal);
+
+
+
+
+
+    // Given an array of numbers, add all the even ones
+    // Given an array of test scores(numbers), get the average score using reduce
+
+
+
+// Map
+
+// Sort
+
+
+
+
+// HOMEWORK:
+
+// Reduce: Use reduce for the following questions
+// level 0:
+// Given an array of numbers, add all of them together
+// level 1:
+// Given an array of numbers, subtract them all from 100
+// level 2:
+// Given an array of numbers, add all the even ones
+// level 3:
+// Given an array of strings, reduce all elements to one string
+// level 4:
+// Given an array of test scores(numbers) use reduce to get the average score
+// level 5:
+// Given an array of arrays all only containing strings (given below), reduce all elements to one string
+let arrOfArrOfStr = [[['Peter'],['Piper']],[['Picked'],['A']],[['Pickled'], ['Pepper']]]
+
+// Filter: Use filter for the following questions
+// level 0:
+// Given an array of strings remove any that are longer than 4 letters
+// level 1:
+// Given an array of numbers, remove any that are even
+// level 2:
+// Given an array of numbers, add all the odd ones
+// level 3:
+// Given an array of people (object given below), add all heights together
+let people = {
+name: 'Sharmania', height: '130cm',
+name: 'Jessica', height: '160cm',
+name: 'Ali', height: '180cm',
+name: 'Hara', height: '170cm',
+}
+// level 4:
+// Given an array of students with test scores filter out any outliers, any scores that are more or less than 20 points from 75.
+let people = {
+name: 'Paul', score: 40,
+name: 'Darrel', score: 61,
+name: 'Jay', score: 66,
+name: 'Alexi', score: 70,
+name: 'Niko', score: 81,
+name: 'Benjamin', score: 92,
+name: 'Xavier', score: 110,
+}
+// Output: [61, 66, 70, 81, 92]
+
