@@ -73,7 +73,7 @@ nput.onButtonPressed(Button.A, function () {
         game.gameOver()
     }
 })
-let sprite: game.LedSprite = null
+//let sprite: game.LedSprite = null
 sprite = game.createSprite(0, 0)
 basic.forever(function () {
     sprite.move(3)

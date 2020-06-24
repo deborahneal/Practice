@@ -645,13 +645,13 @@
 
 
     // Given the following list of objects reduce all populations to one.
-        let countries = {
-            USA: 300000000,
-            UK: 66000000,
-            India:1300000000
-        }
+    //     let countries = {
+    //         USA: 300000000,
+    //         UK: 66000000,
+    //         India:1300000000
+    //     }
 
-    let newCountries = countries.reduce((total, ele) => total + ele.newCountries, 0);
+    // let newCountries = countries.reduce((total, ele) => total + ele.newCountries, 0);
 
     // let nums = [1, 2, 30, 5];
     // let totalVal = nums.reduce((total, num) => total + num);
@@ -688,7 +688,7 @@
 // Given an array of test scores(numbers) use reduce to get the average score
 // level 5:
 // Given an array of arrays all only containing strings (given below), reduce all elements to one string
-let arrOfArrOfStr = [[['Peter'],['Piper']],[['Picked'],['A']],[['Pickled'], ['Pepper']]]
+//let arrOfArrOfStr = [[['Peter'],['Piper']],[['Picked'],['A']],[['Pickled'], ['Pepper']]]
 
 // Filter: Use filter for the following questions
 // level 0:
@@ -699,22 +699,132 @@ let arrOfArrOfStr = [[['Peter'],['Piper']],[['Picked'],['A']],[['Pickled'], ['Pe
 // Given an array of numbers, add all the odd ones
 // level 3:
 // Given an array of people (object given below), add all heights together
-let people = {
-name: 'Sharmania', height: '130cm',
-name: 'Jessica', height: '160cm',
-name: 'Ali', height: '180cm',
-name: 'Hara', height: '170cm',
-}
-// level 4:
-// Given an array of students with test scores filter out any outliers, any scores that are more or less than 20 points from 75.
-let people = {
-name: 'Paul', score: 40,
-name: 'Darrel', score: 61,
-name: 'Jay', score: 66,
-name: 'Alexi', score: 70,
-name: 'Niko', score: 81,
-name: 'Benjamin', score: 92,
-name: 'Xavier', score: 110,
-}
+//let people = {
+// name: 'Sharheight: '160cm',
+// name: 'Ali', height: '180cm',
+// name: 'Hara', height: '170cm',
+// }
+// // level 4:
+// // Given an array of students with test scores filter out any outliers, any scores that are more or less than 20 points from 75.
+// let people = {
+// name: 'Paul', score: 40,
+// name: 'Darrel', score: 61,
+// name: 'Jay', score: 66,
+// name: 'Alexi', score: 70,
+// name: 'Niko', score: 81,
+// name: 'Benjamin', score: 92,
+// name: 'Xavier', scmania', height: '130cm',
+// name: 'Jessica', ore: 110,
+// }
 // Output: [61, 66, 70, 81, 92]
+
+
+// Sort
+    // returns the original array but sorted 
+
+    // Examples:
+        // sort an array of strings alphabetically
+        //let arrOfStr = ['dog', 'doe', 'cat', 'bat', 'rat'];
+        // console.log(arrOfStr.sort());
+// rOfNums = [0, 99, 1, 34, -144, -51, -13, 0, 1, 4,12312, 51212, -1424211];
+//         let sortedNums = () => arrOfNums.sort();
+//         // console.time('sortedNums');
+//         // console.log(sortedNums(arrOfNums));
+//         // console.timeEnd('sortedNums');
+
+//     // sort an array of numbers by ACTUAL size (this is what we generally expect as humans)
+//         let arrOfNums2 = [0, 99, 123, 51, 2, 3, -1, 01, 3, -3, -3000, -1000];
+//         // console.log(arrOfNums2.sort((a, b) => a - b)); // (Potentially super inefficient)
+
+//     // sort an array of objects (based on numeric Key-Value pairs)
+//         let arrOfObjs = [
+//             {name: 'Mike', age: 39},
+//             {name: 'Sammi', age: 16},
+//             {name: 'Shawn', age: 15},
+//             {name: 'Sharice', age: 20},
+//         ];
+    // sort an array of numbers by first digit, then second, etc...
+        //let ar
+
+        // console.log(arrOfObjs.sort((person1, person2) => person1.age - person2.age))
+        
+    // sort an array of objects (based on non-numeric Key-Value pairs)
+        // very complex, look-up if needed
+
+// Map
+// returns a new array populated with the function results
+
+// examples: (Impossible to cover them all as there are so many possible scenareos)
+    // // Duplicated all numeric values in an array
+    //     let doubled = [2,4,6,8].map(n => n * 2);
+    //     console.log(doubled);
+
+    // // Remove last letter of all string in an array
+    //     let strings4 = ['Hello', 'Goodbye', 'Goodmorning'];
+    //     let shortStrings = strings4.map(str => str.slice(0, -1))
+    //     console.log(shortStrings);
+
+    // Reverse all strings in an array
+        // let strings5 = ['Hello', 'Goodbye', 'Goodmorning'];
+        // let reversedStrings = strings5.map(str => str.split('').reverse().join(''));
+        // console.log(reversedStrings);
+        // // before we had .map() this would look like:
+        //     let reversedStringsOld = (param) => {
+        //         let acc = [];
+
+        //         for(let i = 0; i < param.length; i++){
+        //             acc.push(param[i].split('').reverse().join(''));
+        //         }
+        //         return acc;
+        //     }
+        //     console.log(reversedStringsOld(strings5));
+        
+    // More complex syntatically
+        // add one to every other element
+        // let numbers = [-1, 4, 7, 0, -3, 6];
+        // let newNumbers = numbers.map((num, index) => {
+        //     if(index % 2){
+        //         return num + 1
+        //     } else {
+        //         return num + 0;
+        //     }    
+        // })
+        
+        //console.log(newNumbers);
+    
+
+
+
+// declaring our variable array of numbers.
+//let arr = ['50', '7', '-1', '8', '21', '80'];
+//let console.log to check for the biggest number.
+//console.log(Math.max('50', '7', '-1', '8', '21', '80'));    // Math.max to determine the biggest num in the array.   
+                                           // this works when you console.log invoking the array 
+                                           // directly inside the console.
+                                           // that was the fastest way to get the largest number.
+
+//  // we need to create a function to do this task, giving us the biggest number in the array.
+// function bigNum(arr) {
+//     let newNum = 0;                           // declaring a variable as our accumulator for the largest number. 
+//     for(let i = 0; i < arr.length; i++){      // a for loop to iterate all elements in array.
+//         let element = arr[i];                 // declare the variable element to define our logic.
+
+//         // an if statment to compare the numbers.
+//         if(element > -1){    // this works.   //! if element.indexof(element)or indexof('')! don't work.
+//         element = Math.max(arr[i]);       // equalize the element to the method Math.max
+//         newNum = element;                 // the accumulator will be equal to our element.
+//         return newNum;                         // and we need to return the new number.
+
+//        }//else if(element < -1){
+//         //return element = Math.min(arr[i]);
+        
+//        //}
+//     }
+
+// }
+// console.log(bigNum(arr));
+    
+
+
+
 

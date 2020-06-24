@@ -179,8 +179,52 @@
 
 
 
+// higher order function practice
+// Map
 
+// level 0: using .map() do the following
+    // double the values of any array of numbers
+let arr = ['50', '7', '-1', '8', '21', '80'];          // declare a variable array number.
+let doubled = arr.map(n => n * 2);                     // using .map method in the array with arrow function
+                                                       // declaring the higherOrderFunction called doubled.
+console.log(doubled);                                  // console.logging the function.
 
+// level 1: using .map() do the following
+    // grab the first letter of an array of strings
+let colors1 = ['orange', 'beige', 'gold', 'black'];       // declare the variable colors array.
+let firstLet = colors1.map(str => str.slice(-0, 1)); // or str[0];      // declaring the HOF using .slice on the strings.
+console.log(firstLet);
+
+    // grab the first element of an array of arrays
+let array1 = [['orange','bananas'], ['beige'], ['gold'], ['black']];    // declare the variable of an array.
+let firstEle = array1.map(array1 => array1[0]);                  // using HOF + .shift.
+console.log(firstEle);                                                 // didn't work.
+
+// level 2: using .map() do the following
+    // grab the last letter of an array of strings
+let colors = ['orange', 'beige', 'gold', 'black'];        // declaring variable color, an array.
+let lastLet = colors.map(str => str.slice(0, -1));       // declaring the HOF using .slice on the strings.
+console.log(lastLet);
+
+    // grab the last letter of an array of arrays
+let array2 = [['orange','bananas'], ['beige'], ['gold'], ['black']]; 
+let lastEle = array2.map(element => element[element.length-1].slice( -1));                         // using HOF + .shift.
+console.log(lastEle);                                
+
+// level 3: using .map() do the following
+    // create a new array of fullNames from an array of objects where ONE object looks similar to this:{first: 'Nic', last: 'Leask'};
+let persons =  [{first: 'Ro', last: 'Pili'}, {first: 'Nic', last: 'Leask'}];
+let fullNames = persons.map(item => [item.first,item.last].join(" ") );
+console.log(fullNames); 
+    // Output: ['Ro Pili', 'Nic Leask'];
+
+// level 4: using .map() do the following
+    // create a new array of objects from an array of objects where ONE object looks similar to this:{first: 'Nic', last: 'Leask'};
+    // Input:  [{first: 'Ro', last: 'Pili'}, {first: 'Nic', last: 'Leask'}];
+    // Output: [{first: 'Ro', last: 'Pili', fullName: 'Ro Pili', initials: 'RP'}, {first: 'Nic', last: 'Leask', fullName: 'Nic Leask', initials: 'NL'}];
+let persons1 =  [{first: 'Ro', last: 'Pili'}, {first: 'Nic', last: 'Leask'}];
+let fullNames1 = persons1.map(item => [item.first,item.last].join(" "));
+console.log(fullNames1); 
 
 
 
