@@ -843,39 +843,41 @@ console.log(stringArr);
 
 //4) console.log the last element of the 'stringArr' array. 
 // note: your solution should work for both questions 2 & 4. 
-console.log(stringArr.splice( -1));
+//console.log(stringArr.splice( -1));
+console.log(stringArr[stringArr.length -1]);
 
 //5) console.log the middle element of the 'stringArr' array
 // note: extra points if you use a dynamic solution (hint: Math.floor) 
 // your console should read "middle" 
-console.log(stringArr.slice(2, 3));
+//console.log(stringArr.slice(2, 3));
+//console.log(stringArr[Math.floor(stringArr.length / 2)]);
 
 //6) add a new element to the beginning of the 'stringArr' array called "new first"
 // let newfirst = (stringArr.unshift('hello', 'world'));
-console.log(stringArr);
+//console.log(stringArr);
 
 
 //7) console.log the 2nd index of the 'stringArr' array 
-console.log(stringArr[2]);
+//console.log(stringArr[2]);
 
 //8) console.log the 0 index of the 'stringArr' array
-console.log(stringArr[0]);
+//console.log(stringArr[0]);
 
 //9) console.log the length of the 'stringArr' array
-console.log(stringArr.length);
+//console.log(stringArr.length);
 
 //10) console.log the length of every string within the 'stringArr' array.  
 //note: use only one console.log to achieve this... you will need to write a function. 
 function longer(param){
     let newArr = [];
     for(let i = 0; i < param.length; i++){
-        let element = 0;
-        if(element.length > -1){
-            element = param[i];
-            newArr = element;
-            element++
-        }
-    }   return newArr.push();
+        let element = param[i];
+        // if(element.length > -1){
+        //     element = param[i];
+        //     newArr = element;
+        //     element++
+        // }
+    }   return newArr.push(element.length);
 }
 console.log(longer(stringArr))
 
@@ -892,6 +894,9 @@ let newNumArr = []
 //11) within a console.log, add the first and last index values of 'numArr' array
 //ex. console.log(firstIndex + lastIndex); 
 //console.log(1 + 0);
+console.log(numArr[0] + numArr[9]);
+console.log(newArr[0] + numArr[numArr.length -1]);
+
 
 //12) remove the last index value of the 'numArr' array 
 //console.log(numArr.pop(''))
@@ -909,7 +914,7 @@ let newNumArr = []
 
 //15) console.log the middle index dynamically.  
 //hint(Math.floor) 
-//console.log(numArr.slice(numArr.length / 2),  numArr.length / 2);
+//console.log(numArr[Math.floor(numArr.length / 2)]);
 
 
 
@@ -921,9 +926,10 @@ let arrOfArr = [['this', 'is', 'an', 'array'],
 
 //16) console.log the numbers 1 & 6 from the 'arrOfArr' array. 
 //note: do NOT console.log(1, 6) <- this is not the answer. 
+console.log(arrOfArr[1][0], arrOfArr[3][0]);
 
 //17) console.log both 'array' strings from the 'arrOfArr' array
-console.log(arrOfArr.join(','));
+console.log(arrOfArr[0][3], arrOfArr[2][1]);
 
 //18) console.log the two arrays that contain only numbers
 //note: your console should contain 2 arrays 
@@ -945,11 +951,12 @@ console.log(arrOfArr[0].slice(1, 2));
 
 //23) console.log the number 3 from the 'arrOfArr' array
 console.log(arrOfArr[1].slice(2, 3));
+console.log(arrOfArr[1][2]);
 
 
 //24) console.log only the strings that begin with consonants from the 'arrOfArr' array
-console.log(arrOfArr.join('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x','z'));
-
+//console.log(arrOfArr.join('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x','z'));
+console.log(arrOfArr[0][0], arrOfArr[2][3]);
 
 //25) console.log the number 8 from the 'arrOfArr' array
 console.log(arrOfArr[3].slice(2, 3));
@@ -963,11 +970,12 @@ console.log(arrOfArr[3].slice(2, 3));
 
 //29) write a function that returns the first elements of EACH array from the 'arrOfArr' array
 //result: (['this', 1, 'another', 6])
-
+let firstEle = arrOfArr.map(ele => ele[0]);
+console.log(firstEle);
 
 //30) write a function that returns the last elements of EACH array from the 'arrOfArr' array 
 //result: (['array', 5, 'strings', 0])
-
+let lastEle = arrOfArr.map(ele => ele[ele.length -1]);
 
 
 
